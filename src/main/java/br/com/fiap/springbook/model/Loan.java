@@ -18,22 +18,21 @@ import lombok.Data;
 @Data
 public class Loan {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotBlank
-    @Size(min = 2, max = 100)
+    @NotBlank(message = "{loan.borrowerName.notblank}")
+    @Size(min = 2, max = 100, message = "{loan.borrowerName.size}")
     private String borrowerName;
 
-    @NotBlank
-    @Size(min = 2, max = 200)
+    @NotBlank(message = "{loan.bookTitle.notblank}")
+    @Size(min = 2, max = 200, message = "{loan.bookTitle.size}")
     private String bookTitle;
 
-    @PastOrPresent
+    @PastOrPresent(message = "{loan.loanDate.pastorpresent}")
     private LocalDate loanDate;
 
-    @FutureOrPresent
+    @FutureOrPresent(message = "{loan.returnDate.futureorpresent}")
     private LocalDate returnDate;
 
     @Enumerated(EnumType.STRING)
