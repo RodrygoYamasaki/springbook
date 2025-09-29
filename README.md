@@ -1,5 +1,5 @@
 # 📚 SpringBook
-Esse é uma API REST desenvolvida com Spring Boot para simular as principais funcionalidades de um sistema de bibliteca, com foco nos processos de empréstimos e devoluções de livros.
+Esse é uma API REST desenvolvida com Spring Boot para simular as principais funcionalidades de um sistema de biblioteca, com foco nos processos de empréstimos e devoluções de livros.
 
 ## 🌐 Tecnologias e Dependências
 
