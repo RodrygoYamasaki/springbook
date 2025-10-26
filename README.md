@@ -15,6 +15,59 @@ Esse é uma API REST desenvolvida com Spring Boot para simular as principais fun
 
 ---
 
+## 🧩 Endpoints
+
+**GET /categories**
+- Retorna todas as categorias cadastradas.
+- Corpo JSON:
+  
+  ```json
+  {
+    "id": 1,
+    "genre": "Ficção",
+    "name": "Aventura"
+  }
+  ```
+
+**GET /categories/{id}**
+- Busca uma categoria específica pelo ID.
+- Corpo JSON:
+
+  ```json
+  {
+  "id": 1,
+  "genre": "Ficção",
+  "name": "Aventura"
+  }
+  ```
+
+**POST /categories**
+- Cria uma nova categoria.
+- Corpo JSON:
+
+  ```json
+  {
+  "genre": "Romance",
+  "name": "Romance Clássico"
+  }
+  ```
+
+**PUT /categories/{id}**
+- Atualiza uma categoria existente pelo ID.
+- Corpo JSON:
+
+  ```json
+  {
+  "genre": "Romance Moderno",
+  "name": "Contemporâneo"
+  }
+  ```
+
+**DELETE /categories/{id}**
+- Remove uma categoria específica pelo ID.
+
+---
+
 ## 🚀 Como Usar
 
 1. **Clone o repositório:**
@@ -23,5 +76,11 @@ Esse é uma API REST desenvolvida com Spring Boot para simular as principais fun
    https://github.com/RodrygoYamasaki/springbook.git
    ```
 
-2. Utilize a IDE de sua escolha (IntelliJ, VS Code, Eclipse, etc.)
-3. Rode o projeto.
+2. **Utilize a IDE de sua escolha (IntelliJ, VS Code, Eclipse, etc.)**
+3. **Executar a aplicação:**
+
+   ```bash
+   mvn spring-boot:run
+   ```
+   
+4. **Testar a API: Use o Insomnia para enviar requisições HTTP.**
