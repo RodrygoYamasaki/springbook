@@ -21,47 +21,47 @@ Esse é uma API REST desenvolvida com Spring Boot para simular as principais fun
 - Retorna todas as categorias cadastradas.
 - Corpo JSON:
   
-  ```json
-  {
-    "id": 1,
-    "genre": "Ficção",
-    "name": "Aventura"
-  }
-  ```
+```json
+{
+"id": 1,
+"genre": "Ficção",
+"name": "Aventura"
+}
+```
 
 **GET /categories/{id}**
 - Busca uma categoria específica pelo ID.
 - Corpo JSON:
 
-  ```json
-  {
-  "id": 1,
-  "genre": "Ficção",
-  "name": "Aventura"
-  }
-  ```
+```json
+{
+"id": 1,
+"genre": "Ficção",
+"name": "Aventura"
+}
+```
 
 **POST /categories**
 - Cria uma nova categoria.
 - Corpo JSON:
 
-  ```json
-  {
-  "genre": "Romance",
-  "name": "Romance Clássico"
-  }
-  ```
+```json
+{
+"genre": "Romance",
+"name": "Romance Clássico"
+}
+```
 
 **PUT /categories/{id}**
 - Atualiza uma categoria existente pelo ID.
 - Corpo JSON:
 
-  ```json
-  {
-  "genre": "Romance Moderno",
-  "name": "Contemporâneo"
-  }
-  ```
+```json
+{
+"genre": "Romance Moderno",
+"name": "Contemporâneo"
+}
+```
 
 **DELETE /categories/{id}**
 - Remove uma categoria específica pelo ID.
